@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Thomas Battiston</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>
+        Thomas Battiston
+        <br>
+        <small>Développeur Full-Stack Ruby <em>(on Rails)</em></small>
+      </h1>
+      <p class="text-muted">
+        6 rue Saint-Nizier 71000 Mâcon 06 68 33 24 04 <a href="https://github.com/toommz">Github</a>
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h2 class="text-center">Compétences</h2>
+          <ul class="list-group">
+            <% curriculum[:skills].each do |skill| %>
+              <li class="<%= skill.get_class %>">
+                <%= skill.name %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+
+        <div class="col-6">
+          <h2 class="text-center">Expériences</h2>
+
+          <% curriculum[:experiences].each do |experience| %>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title"><%= experience.company %></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%= experience.period %></h6>
+                <p class="card-text"><%= experience.role %></p>
+                <p class="card-text"><%= experience.missions %></p>
+              </div>
+              <div class="card-footer text-muted">
+                <%= experience.city %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
