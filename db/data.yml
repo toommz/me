@@ -1,0 +1,17 @@
+data:
+  skills:
+    - { name: 'ruby', level: 'senior' }
+    - { name: 'rails', level: 'senior' }
+    - { name: 'rspec', level: 'senior' }
+    - { name: 'git', level: 'senior' }
+    - { name: 'elixir', level: 'junior' }
+    - { name: 'phoenix', level: 'junior' }
+    - { name: 'go', level: 'junior' }
+    - { name: 'es6', level: 'experienced' }
+    - { name: 'jquery', level: 'senior' }
+    - { name: 'react', level: 'junior' }
+    - { name: 'agile', level: 'experienced' }
+
+  experiences:
+    - { company: 'permigo', from: 'Octobre 2014', to: 'Juin 2017', role: 'Lead Dev', city: 'Lyon', missions: "Amélioration et maintenance d'une auto-école en ligne d'envergure nationale (environ 20 000 utilisateurs répartis sur une dizaine de villes). Architecture et développment d'une plateforme d'apprentissage du code de la route en ligne (codiko.com). Développement d'une plateforme d'avis client pour le compte de l'auto-école. Lead de l'équipe de développement sous SCRUM (jusqu'à 7 développeurs).", position: 2 }
+    - { company: 'pepitelab', from: 'Juin 2017', role: 'CTO', city: 'Lyon', missions: "Création de plusieurs plateformes en ligne pour le compte de clients externes et projets internes, la plupart du temps avec Ruby on Rails, parfois avec Symfony sur demande du client.", position: 1 }
