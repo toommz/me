@@ -10,6 +10,10 @@ get '/' do
   erb :home, locals: { curriculum: prepare_curriculum }
 end
 
+get '/resume' do
+  send_file File.join('./resume.pdf'), type: 'application/pdf'
+end
+
 private
 
 def prepare_curriculum
